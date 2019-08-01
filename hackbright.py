@@ -33,7 +33,7 @@ def get_student_by_github(github):
 
     row = db_cursor.fetchone()
 
-    print(f"Student: {row[0]} {row[1]}\nGitHub account: {row[2]}")
+    print(f"Student: {row[0]} {row[1]}\nGitHub account: {row[2]}\n\n\n\n\n\n\n\n\n\n\n")
 
     return row
 
@@ -56,6 +56,7 @@ def make_new_student(first_name, last_name, github):
     db.session.commit()
 
     print(f"Successfully added student: {first_name} {last_name}")
+
 
 
 def get_project_by_title(title):
@@ -126,7 +127,7 @@ def get_grades_by_github(github):
     rows = db_cursor.fetchall()
 
     for row in rows:
-        print(f"Student {github} received grade of {row[1]} for {row[0]}")
+        print(f"Student {github} received grade of {row[1]} for {row[0]}\n\n\n\n\n\n\n\n\n\n")
 
     return rows
 
